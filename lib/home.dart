@@ -33,7 +33,8 @@ class _HomepageState extends State<Homepage> {
                         alignment: Alignment.bottomRight,
                         child: Text(
                           userInput.toString(),
-                          style: const TextStyle(fontSize: 30, color: Colors.white),
+                          style: const TextStyle(
+                              fontSize: 30, color: Colors.white),
                         ),
                       ),
                       SizedBox(
@@ -41,7 +42,8 @@ class _HomepageState extends State<Homepage> {
                       ),
                       Text(
                         answer.toString(),
-                        style: const TextStyle(fontSize: 30, color: Colors.white),
+                        style:
+                            const TextStyle(fontSize: 30, color: Colors.white),
                       )
                     ],
                   ),
@@ -54,6 +56,7 @@ class _HomepageState extends State<Homepage> {
                     Row(
                       children: [
                         WidgetButton(
+                          color: Colors.blue,
                           title: 'AC',
                           onPress: () {
                             userInput = '';

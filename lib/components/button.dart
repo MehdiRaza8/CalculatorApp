@@ -23,9 +23,9 @@ class WidgetButton extends StatelessWidget {
           child: Container(
             height: MediaQuery.of(context).size.height / 10,
             child: Center(
-              child:Text(
+              child: Text(
                 title,
-                style: const TextStyle(fontSize: 20, color: Colors.white),
+                style: const TextStyle(fontSize: 30, color: Colors.black),
               ),
             ),
             decoration: BoxDecoration(shape: BoxShape.circle, color: color),
