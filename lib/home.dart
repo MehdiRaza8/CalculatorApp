@@ -34,7 +34,7 @@ class _HomepageState extends State<Homepage> {
                         child: Text(
                           userInput.toString(),
                           style: const TextStyle(
-                              fontSize: 30, color: Colors.white),
+                              fontSize: 40, color: Colors.white),
                         ),
                       ),
                       SizedBox(
@@ -56,7 +56,7 @@ class _HomepageState extends State<Homepage> {
                     Row(
                       children: [
                         WidgetButton(
-                          color: Colors.blue,
+                          color: Colors.orange,
                           title: 'AC',
                           onPress: () {
                             userInput = '';
@@ -66,6 +66,7 @@ class _HomepageState extends State<Homepage> {
                         ),
                         WidgetButton(
                           title: '+/-',
+                          color: Colors.orange,
                           onPress: () {
                             userInput += '+/-';
                             setState(() {});
@@ -73,6 +74,7 @@ class _HomepageState extends State<Homepage> {
                         ),
                         WidgetButton(
                           title: '%',
+                          color: Colors.orange,
                           onPress: () {
                             userInput += '%';
                             setState(() {});
@@ -80,11 +82,11 @@ class _HomepageState extends State<Homepage> {
                         ),
                         WidgetButton(
                           title: '/',
+                          color: Colors.orange,
                           onPress: () {
                             userInput += '/';
                             setState(() {});
                           },
-                          color: colororange,
                         ),
                       ],
                     ),
@@ -217,7 +219,7 @@ class _HomepageState extends State<Homepage> {
                             equalPress();
                             setState(() {});
                           },
-                          color: colororange,
+                          color: Colors.orange,
                         ),
                       ],
                     ),

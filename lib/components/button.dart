@@ -4,11 +4,12 @@ class WidgetButton extends StatelessWidget {
   final String title;
   final Color color;
   final VoidCallback onPress;
+
   const WidgetButton(
       {Key? key,
       required this.title,
       this.color = const Color(0xffa5a5a5),
-      required this.onPress})
+      required this.onPress,})
       : super(key: key);
 
   @override
